@@ -66,10 +66,10 @@ def getProductHash():
         return "invalid product id", 500
     hash = hashlib.md5(products[product_id].name.encode('utf-8')).hexdigest()
     return hash
-    
+
 # Your application should never run on all interfaces.
 # See https://docs.datadoghq.com/code_analysis/static_analysis_rules/python-flask/listen-all-interfaces/
 # Bind to localhost for development purposes and attach to the address 127.0.0.1
 # Replace with the following:
-# app.run(host="127.0.0.1")
-app.run(host="0.0.0.0")
+app.run(host="127.0.0.1")
+# app.run(host="0.0.0.0")
