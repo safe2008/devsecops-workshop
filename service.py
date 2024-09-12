@@ -52,8 +52,8 @@ def index():
     # render_template_string may contain an injection. Prefer to use templates in files instead.
     # See https://docs.datadoghq.com/code_analysis/static_analysis_rules/python-flask/no-render-template-string/
     # Replace with the following:
-    # return render_template("index.html")
-    return render_template_string("<html><body><a href=\"/product/list\">product list</a></body></html>")
+    return render_template("index.html")
+    # return render_template_string("<html><body><a href=\"/product/list\">product list</a></body></html>")
 
 # Your application should never run on all interfaces.
 # See https://docs.datadoghq.com/code_analysis/static_analysis_rules/python-flask/listen-all-interfaces/
