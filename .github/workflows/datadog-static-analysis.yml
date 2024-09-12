@@ -19,3 +19,5 @@ jobs:
         dd_env: ci
         dd_site: datadoghq.com
         cpu_count: 2
+        enable_performance_statistics: false
+        secrets_enabled: true
